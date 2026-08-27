@@ -5,20 +5,20 @@
 class Bookmark < Formula
   desc "CLI tool for searching and opening bookmarks"
   homepage "https://github.com/martensjostrand/bookmark"
-  version "0.1.0"
+  version "0.2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/martensjostrand/bookmark/releases/download/v0.1.0/bookmark_0.1.0_darwin_amd64.tar.gz"
-    sha256 "ee593dc3f8dc6eb93ad4b4c6a9defb594104c8fad99a6a2623e6a732711a311b"
+    url "https://github.com/martensjostrand/bookmark/releases/download/v0.2.0/bookmark_0.2.0_darwin_amd64.tar.gz"
+    sha256 "cbdbb184d97e4fccdb06b9673c6f0e7b56c31879ddbda44ea1c75758395ac2af"
 
     define_method(:install) do
       bin.install "bm"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/martensjostrand/bookmark/releases/download/v0.1.0/bookmark_0.1.0_darwin_arm64.tar.gz"
-    sha256 "a4f0cb8efb68f4bb032f2ae19b4fb70aa9506ccc08d99dfc98406bf75ef71e54"
+    url "https://github.com/martensjostrand/bookmark/releases/download/v0.2.0/bookmark_0.2.0_darwin_arm64.tar.gz"
+    sha256 "5623bd144916c449ef3ee2d88b2bb250d1274b84797215f04af7a8a79cf51dc3"
 
     define_method(:install) do
       bin.install "bm"
